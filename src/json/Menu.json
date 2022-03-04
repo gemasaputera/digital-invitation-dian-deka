@@ -1,0 +1,17 @@
+[
+  {
+    "title": "event",
+    "url": "event",
+    "icon": "/icons/ic_calendar.svg"
+  },
+  {
+    "title": "gallery",
+    "url": "gallery",
+    "icon": "/icons/ic_gallery.svg"
+  },
+  {
+    "title": "wishes",
+    "url": "wishes",
+    "icon": "/icons/ic_love.svg"
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "icon": "ic_calendar_twotone.svg",
+    "text": "22 januari 2022",
+    "subtext": "",
+    "type": ""
+  },
+  {
+    "icon": "ic_watch_twotone.svg",
+    "text": "13.00 - 17.00",
+    "subtext": "",
+    "type": "akad"
+  },
+  {
+    "icon": "ic_pin_twotone.svg",
+    "text": "Rumah Mempelai Wanita",
+    "subtext": "Kp. Ranji Ds. Telukpinang RT 003/006, Kec.Ciawi Kab.Bogor",
+    "type": ""
+  }
+]

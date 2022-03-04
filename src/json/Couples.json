@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Dian Salma Novitasari",
+    "img": "/images/dian.png",
+    "father": "Moch Istiarno",
+    "mother": "Rita Juwita",
+    "gender": "P",
+    "social": [
+      {
+        "name": "Instagram",
+        "url": "#",
+        "icon": "/icons/ic_instagram.svg"
+      },
+      {
+        "name": "Youtube",
+        "url": "#",
+        "icon": "/icons/ic_yt.svg"
+      },
+      {
+        "name": "Tiktok",
+        "url": "#",
+        "icon": "/icons/ic_tt.svg"
+      }
+    ]
+  },
+  {
+    "name": "Iqbal Merdeka Masyhuri",
+    "img": "/images/deka.png",
+    "father": "Heri Iriyanto",
+    "mother": "Mardiyastuti",
+    "gender": "L",
+    "social": [
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/gemasaputera",
+        "icon": "/icons/ic_instagram.svg"
+      },
+      {
+        "name": "Youtube",
+        "url": "#",
+        "icon": "/icons/ic_yt.svg"
+      },
+      {
+        "name": "Tiktok",
+        "url": "#",
+        "icon": "/icons/ic_tt.svg"
+      }
+    ]
+  }
+]

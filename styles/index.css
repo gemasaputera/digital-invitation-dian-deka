@@ -1,0 +1,54 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@font-face {
+  font-family: "BrittneySignature";
+  src: url("/fonts/BrittneySignature.otf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "LasminiYahut";
+  src: url("/fonts/LasminiYahut.ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+html,
+body {
+  background-color: #fff8eb;
+}
+
+.btn {
+  @apply py-1.5 px-4 rounded-md;
+}
+
+.btn-primary {
+  background-color: #ef6b59;
+  transition: all 0.5s ease;
+  @apply focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:ring-opacity-50 text-white;
+}
+
+.btn-primary:hover {
+  background-color: #ef8659;
+}
+
+.background-cover {
+  background: url(/images/background.webp) no-repeat center center fixed;
+  background-size: cover;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  @apply absolute;
+}
+
+.main {
+  @apply container mx-auto;
+}
+
+.primary-color {
+  color: #ef6b59;
+}

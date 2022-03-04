@@ -1,0 +1,22 @@
+.menuItem {
+  background-color: inherit;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease-in-out;
+  height: 38px;
+  width: 38px;
+
+  @apply lg:flex-col lg:rounded lg:w-16 lg:h-auto lg:font-bold cursor-pointer;
+}
+
+.menuItem:hover {
+  background-color: #ef6b59;
+}
+
+.menuItem.active {
+  background-color: #ef6b59;
+  color: #fff;
+}
