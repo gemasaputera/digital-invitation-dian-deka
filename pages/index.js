@@ -65,10 +65,12 @@ export default function Home() {
               Kepada Bapak/Ibu/Saudara/i
             </p>
           </div>
-          <div className="flex justify-center z-20">
-            <p className="text-white text-center font-semibold text-xl 2xl:text-2xl my-5">
-              {name === "" ? "Tamu Undangan" : name}
-            </p>
+          <div className="flex justify-center z-20 my-3 md:my-5">
+            <div className="py-5 px-10 rounded bg-white min-w-[70%]">
+              <p className="text-center font-bold text-xl 2xl:text-2xl my-5">
+                {name === "" ? "Tamu Undangan" : name}
+              </p>
+            </div>
           </div>
           <div className="flex justify-center z-20">
             <p className="text-sm md:text-lg text-center text-white">
