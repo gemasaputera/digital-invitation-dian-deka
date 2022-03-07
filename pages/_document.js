@@ -14,9 +14,7 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
           rel="stylesheet"
         />
-        <link rel="preload" src="/images/background.webp" />
-        <link rel="preload" src="/images/profile-1.webp" />
-        <link rel="preload" src="/images/profile-2.webp" />
+        <link rel="preload" src="/images/background.jpg" />
       </Head>
       <body>
         <Main />

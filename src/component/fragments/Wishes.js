@@ -156,14 +156,13 @@ export default function Wishes() {
         </div>
         <Fade delay={500}>
           <p className="text-center md:w-3/5 md:mx-auto">
-            Doa serta dukungan dari Anda bagi pernikahan Dian & Deka sungguh
-            sangat berharga.
+            Doa serta dukungan dari Bapak, Ibu, Saudara/i bagi pernikahan kami
+            sungguh sangat berharga.
           </p>
           <p className="text-center md:w-3/5 md:mx-auto">
-            Kami senantiasa selalu mendoakan setiap keluarga, sahabat, dan
-            seluruh rekan - rekan Dian & Deka agar tetap sehat di tengah situasi
-            pandemi. Terima Kasih yang tak terhingga kami sampaikan dari lubuk
-            hati terdalam atas kebaikan dan dukungan Anda dalam pernikahan kami.
+            Kami senantiasa mendoakan setiap keluarga, sahabat, dan seluruh
+            rekan - rekan kami agar tetap sehat di tengah situasi pandemi.
+            Terima Kasih atas kebaikan dan dukungannya untuk pernikahan kami.
           </p>
           <p className="text-center mt-4">Salam Hormat Kami</p>
           <p className="font-semibold text-center">
