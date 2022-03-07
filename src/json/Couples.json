@@ -8,18 +8,8 @@
     "social": [
       {
         "name": "Instagram",
-        "url": "#",
+        "url": "https://instagram.com/diansalma_?utm_medium=copy_link",
         "icon": "/icons/ic_instagram.svg"
-      },
-      {
-        "name": "Youtube",
-        "url": "#",
-        "icon": "/icons/ic_yt.svg"
-      },
-      {
-        "name": "Tiktok",
-        "url": "#",
-        "icon": "/icons/ic_tt.svg"
       }
     ]
   },
@@ -32,18 +22,8 @@
     "social": [
       {
         "name": "Instagram",
-        "url": "https://www.instagram.com/gemasaputera",
+        "url": "https://instagram.com/dekamasyhuri?utm_medium=copy_link",
         "icon": "/icons/ic_instagram.svg"
-      },
-      {
-        "name": "Youtube",
-        "url": "#",
-        "icon": "/icons/ic_yt.svg"
-      },
-      {
-        "name": "Tiktok",
-        "url": "#",
-        "icon": "/icons/ic_tt.svg"
       }
     ]
   }
