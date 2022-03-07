@@ -39,7 +39,7 @@ export default function Wishes() {
   }, [form]);
 
   const getWishes = useCallback(async () => {
-    const wishesRef = collection(db, "messages");
+    const wishesRef = collection(db, "dianMessages");
     const q = query(wishesRef, orderBy("date", "desc"));
     const data = await getDocs(q);
     setWishes(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
