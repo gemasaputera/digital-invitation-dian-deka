@@ -17,12 +17,9 @@ export default function Wishes() {
   const [form, setForm] = useState({
     name: "",
     text: "",
+    rsvp: "",
   });
   const [disabled, setDisabled] = useState(true);
-  // const [address] =
-  //   useState(`Komplek Departemen Agama, jalan walisongo 1 Blok A No. 48
-  // RT01/RW015, Desa Pabuaran (gang smp muhammadiyah, rumah warung)
-  // KAB. BOGOR - BOJONGGEDE JAWA BARAT ID 16921`);
   const [open, setOpen] = useState(false);
   const [loading, setLoading] = useState(false);
   const [wishes, setWishes] = useState([]);
@@ -59,7 +56,7 @@ export default function Wishes() {
     e.preventDefault();
 
     const send = async () =>
-      await addDoc(collection(db, "messages"), {
+      await addDoc(collection(db, "dianMessages"), {
         ...form,
         date: new Date(),
       });
@@ -69,20 +66,41 @@ export default function Wishes() {
       setForm({
         name: "",
         text: "",
+        rsvp: "",
       });
     });
   };
 
   const ItemWishes = ({ data }) => {
+    const status = (value) => {
+      switch (value) {
+        case "hadir":
+          return "text-white bg-green-500";
+        case "tidak hadir":
+          return "text-white bg-yellow-500";
+        default:
+          return "text-white bg-gray-500";
+      }
+    };
     return (
       <div className="flex mb-2">
         <div>
           <img src="/icons/ic_love_twotone.svg" alt="ic_love_twotone" />
         </div>
         <div className="flex flex-col flex-1 ml-2">
-          <p className="font-semibold" style={{ fontSize: 14 }}>
-            {data.name}
-          </p>
+          <div className="flex items-center">
+            <p className="font-semibold" style={{ fontSize: 14 }}>
+              {data.name}
+            </p>
+            <div
+              className={
+                `capitalize text-semibold ml-3 text-xs p-1 rounded ` +
+                status(data.rsvp)
+              }
+            >
+              {data.rsvp}
+            </div>
+          </div>
           <p className="text-gray-400 mb-2" style={{ fontSize: 10 }}>
             {timeconverter(data.date.seconds)}
           </p>
@@ -208,6 +226,7 @@ export default function Wishes() {
                   className="bg-white rounded-lg p-4"
                   placeholder="Enter your name..."
                   onChange={handleChange}
+                  required
                 />
               </div>
             </Fade>
@@ -224,8 +243,48 @@ export default function Wishes() {
                   rows="4"
                   onChange={handleChange}
                   value={form.text}
+                  required
                 />
               </div>
+            </Fade>
+            <Fade bottom delay={1000}>
+              <div className="flex flex-col w-full mt-4">
+                <label htmlFor="name" className="font-semibold capitalize">
+                  hadir? <span className="text-red-600">*</span>
+                </label>
+                <div className="mb-5">
+                  <select
+                    name="rsvp"
+                    id="rsvp"
+                    className="form-select appearance-none
+                      block
+                      w-full
+                      px-3
+                      py-1.5
+                      text-base
+                      font-normal
+                      text-gray-700
+                      bg-white bg-clip-padding bg-no-repeat
+                      border border-solid border-gray-300
+                      rounded
+                      transition
+                      ease-in-out
+                      m-0
+                      focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                    aria-label="Default select example"
+                    onChange={handleChange}
+                  >
+                    <option selected disabled value="">
+                      Pilihan{" "}
+                    </option>
+                    <option value="hadir">Hadir</option>
+                    <option value="tidak hadir">Tidak Hadir</option>
+                    <option value="belum tahu">Belum Tahu</option>
+                  </select>
+                </div>
+              </div>
+            </Fade>
+            <Fade delay={1500}>
               <div className="w-full">
                 <button
                   type="submit"

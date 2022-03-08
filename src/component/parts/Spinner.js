@@ -5,7 +5,7 @@ export default function Spinner() {
     <div>
       <div
         style={{ borderTopColor: "transparent" }}
-        className="w-10 h-10 border-4 border-white m-auto border-solid rounded-full animate-spin"
+        className="w-6 h-6 border-4 border-white m-auto border-solid rounded-full animate-spin"
       ></div>
     </div>
   );
