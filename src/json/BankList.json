@@ -12,5 +12,12 @@
     "bank_short": "permata",
     "bank_number": "9815878504",
     "owner": "Dian Salma Novitasari"
+  },
+  {
+    "logo": "/images/bank-05.png",
+    "bank_name": "bank central asia",
+    "bank_short": "bca",
+    "bank_number": "0953710118",
+    "owner": "Iqbal Merdeka Masyhuri"
   }
 ]
